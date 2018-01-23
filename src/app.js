@@ -9,9 +9,9 @@ const App =()=>{
 
     return(
         <Provider store={createStore(reducers)}>
-         <View>
-             <LibraryList/>
+         <View style={{flex:1}}>
              <Header headerText='Tech-Stack'/>
+             <LibraryList/>
          </View>
         </Provider>
     );

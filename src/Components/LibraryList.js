@@ -13,7 +13,10 @@ class LibraryList extends Component{
 }
 renderRow(library)
 {
-    <ListItem library={library}/>
+    return(
+        <ListItem library={library}/>
+        )
+
 }
 
     render(){
@@ -27,4 +30,4 @@ renderRow(library)
 const mapStateToProps = state=>{
     return{libraries:state.libraries};
 };
-export default connect()(LibraryList);
+export default connect(mapStateToProps)(LibraryList);
